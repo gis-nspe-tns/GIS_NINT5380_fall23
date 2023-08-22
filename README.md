@@ -1,1 +1,1 @@
-# GIS_NINT5380_sp23
+# GIS NINT5380 Fall23 Course Repository
