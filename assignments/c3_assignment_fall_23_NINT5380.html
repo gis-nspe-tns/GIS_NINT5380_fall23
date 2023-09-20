@@ -6,7 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2023-09-15">
+<meta name="dcterms.date" content="2023-09-19">
 
 <title>Class 3 Assignment: Categorical and Proportional Symbolization for Global Powerplants</title>
 <style>
@@ -61,6 +61,7 @@ ul.task-list li input[type="checkbox"] {
   </ul></li>
   <li><a href="#map-symbolization" id="toc-map-symbolization" class="nav-link" data-scroll-target="#map-symbolization">Map symbolization:</a></li>
   <li><a href="#map-layout-deliverable" id="toc-map-layout-deliverable" class="nav-link" data-scroll-target="#map-layout-deliverable">Map layout &amp; Deliverable:</a></li>
+  <li><a href="#video-guides" id="toc-video-guides" class="nav-link" data-scroll-target="#video-guides">Video Guides:</a></li>
   <li><a href="#further-reference" id="toc-further-reference" class="nav-link" data-scroll-target="#further-reference">Further Reference:</a></li>
   </ul>
 </nav>
@@ -81,7 +82,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">September 15, 2023</p>
+      <p class="date">September 19, 2023</p>
     </div>
   </div>
   
@@ -351,7 +352,7 @@ Note
 </figure>
 </div>
 <ul>
-<li><strong>Step 4</strong>, next read in the <em>Delimited Text</em> <code>.csv</code> for the power plant locations:</li>
+<li><strong>Step 4</strong>, next read in the <em>Delimited Text</em> <code>.csv</code> for the power plant locations. Like Assignment 2, the dataset has both <code>latitude</code> and <code>longitude</code> as attributes in the attribute table; you will set your geometry to those two variables just as we did in Assignment 2:</li>
 </ul>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -401,7 +402,7 @@ Note
 </ul>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="https://vimeo.com/674980476"><img src="https://i.imgur.com/UG1XhKl.gif" class="img-fluid figure-img"></a></p>
+<p><a href="https://vimeo.com/866152932"><img src="c3_assignment_fall_23_NINT5380_files/img/multi.gif" class="img-fluid figure-img"></a></p>
 <p></p><figcaption class="figure-caption">Proportional + Categorical Symbolization- Part II</figcaption><p></p>
 </figure>
 </div>
@@ -434,7 +435,7 @@ Note
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Experiment with all the option parameters to become familiar with this powerful tool. Also note that the default style in the current LTR is a nested proportional symbol.</p>
+<p>Experiment with all the option parameters to become familiar with this powerful tool. Also note that a default style in the current LTR is a nested proportional symbol.</p>
 </div>
 </div>
 <ul>
@@ -475,8 +476,27 @@ Note
 <p></p><figcaption class="figure-caption"><em>Collapsed Legend</em></figcaption><p></p>
 </figure>
 </div>
+<div class="callout-tip callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>To best set your circle size breaks, consider a statistical approach. You typically want to have a circle representing a rounded value close to the <code>mean</code>, <code>first quartile</code>, <code>second quartile</code> and <code>third quartile</code>; also consider a circle for the <code>min</code> and <code>max</code> values also. Typically you want a total of approximately 4-5 circle breaks. Keep in mind this is more art than science; you are trying to give the viewer an estimate of the values - not particular absolute values per se - represented by the various circle sizes within the map. The video below details how to develop a statistical overview for a given vector attribute.</p>
+</div>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://vimeo.com/866152889"><img src="c3_assignment_fall_23_NINT5380_files/img/stat.gif" class="img-fluid figure-img"></a></p>
+<p></p><figcaption class="figure-caption">Proportional Symbolization Helper - Attribute Statistics</figcaption><p></p>
+</figure>
+</div>
 <ul>
-<li><p>As the proportional symbolization of larger points may cluster and crowd out smaller point quantities, apply approximately 60% transparency to the primary layers, also covered in the video.</p></li>
+<li><p>As the proportional symbolization of larger points may cluster and crowd out smaller point quantities, apply approximately 50-60% transparency to the primary layers, also covered in the video.</p></li>
 <li><p><em>Properties &gt; Symbology &gt; click-on Symbol &gt; decrease Opacity to approximately 50-60%</em>:</p></li>
 </ul>
 <div class="quarto-figure quarto-figure-center">
@@ -498,7 +518,7 @@ Note
 </ul>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="https://vimeo.com/674980476"><img src="https://i.imgur.com/UG1XhKl.gif" class="img-fluid figure-img"></a></p>
+<p><a href="https://vimeo.com/866152932"><img src="c3_assignment_fall_23_NINT5380_files/img/multi.gif" class="img-fluid figure-img"></a></p>
 <p></p><figcaption class="figure-caption">Proportional + Categorical Symbolization- Part II</figcaption><p></p>
 </figure>
 </div>
@@ -512,7 +532,7 @@ Note
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>It is recommended to create the map scale bar and map inset map prior to finalizing the legend item. You will notice these elements are not covered in the main video guide, but they are covered in the videos below.</p>
+<p>It is recommended to create the map scale bar and map inset map prior to finalizing the legend item. You will notice these elements are not covered in the preceeding video guide above, but they are covered in the Video Guide section below.</p>
 </div>
 </div>
 </section>
@@ -588,9 +608,18 @@ Tip
 <ul>
 <li>There is often a difference in stroke weight/appearance in map canvas vs map layout vs export when designing with proportional symbolization; each instance of the map design process may exhibit a slightly different stroke weight appearance. Typically, the stroke weight needs to be exaggerated slightly in the map canvas to avoid an underexposed final stroke weight in the map output. Below is an example of a light stroke weight that works fine in map layout and export; anything lighter than this may be difficult to see in the final map output:</li>
 </ul>
-<p><img src="https://i.imgur.com/JPe8s66.png" class="img-fluid" alt="Map Canvas vs.&nbsp;Map Layout Stroke Weights"> ## Video Guides:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://i.imgur.com/JPe8s66.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption"><em>Light stroke weights are fine; just be sure to check your final output to make sure they are indeed legible.</em></figcaption><p></p>
+</figure>
+</div>
+</section>
+</section>
+<section id="video-guides" class="level2">
+<h2 class="anchored" data-anchor-id="video-guides">Video Guides:</h2>
 <ul>
-<li><strong>Understanding Map Scale</strong>:</li>
+<li><strong>Video 1 - Understanding Map Scale</strong>:</li>
 </ul>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -599,7 +628,7 @@ Tip
 </figure>
 </div>
 <ul>
-<li><strong>QGIS Scale Bar Development</strong>:</li>
+<li><strong>Video 2 - QGIS Scale Bar Development</strong>:</li>
 </ul>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -608,7 +637,7 @@ Tip
 </figure>
 </div>
 <ul>
-<li><strong>Inset Map Development</strong>:</li>
+<li><strong>Video 3 - Inset Map Development</strong>:</li>
 </ul>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -617,15 +646,23 @@ Tip
 </figure>
 </div>
 <ul>
-<li><strong>Symbolizing one feature through two methods</strong>:</li>
+<li><strong>Video 4 - Symbolizing One Vecture Feature Across Two Thematic Variables</strong>:</li>
 </ul>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="https://vimeo.com/674980476"><img src="https://i.imgur.com/UG1XhKl.gif" class="img-fluid figure-img"></a></p>
+<p><a href="https://vimeo.com/866152932"><img src="c3_assignment_fall_23_NINT5380_files/img/multi.gif" class="img-fluid figure-img"></a></p>
 <p></p><figcaption class="figure-caption">Proportional + Categorical Symbolization- Part II</figcaption><p></p>
 </figure>
 </div>
-</section>
+<ul>
+<li><strong>Video 5 - Get Basic Statistics Profile Panel for 1 Attribute in a Vector Feature:</strong></li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://vimeo.com/866152889"><img src="c3_assignment_fall_23_NINT5380_files/img/stat.gif" class="img-fluid figure-img"></a></p>
+<p></p><figcaption class="figure-caption">Proportional Symbolization Helper - Attribute Statistics</figcaption><p></p>
+</figure>
+</div>
 </section>
 <section id="further-reference" class="level2">
 <h2 class="anchored" data-anchor-id="further-reference">Further Reference:</h2>
