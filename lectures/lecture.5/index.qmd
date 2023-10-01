@@ -1,0 +1,332 @@
+---
+title: "Class 5 - Lecture"
+subtitle: "The Raster Model"
+format:
+  revealjs: 
+    slide-number: true
+    theme: [index_files/custom.scss]
+    touch: true
+    incremental: true   
+resources:
+  - demo.pdf
+---
+
+## The Raster Model
+
+![](index_files/img/1.png){.absolute top="150" left="120" width="850"}
+
+::: footer
+Source:[Raster Format](https://datacarpentry.org/organization-geospatial/01-intro-raster-data/)
+:::
+
+## The Raster Model
+
+### Grid | Cell | Pixel
+
+![](index_files/img/2.png){.absolute top="150" left="120" width="850"}
+
+::: footer
+Source:[Raster Format](https://datacarpentry.org/organization-geospatial/01-intro-raster-data/)
+:::
+
+
+## The Raster Model
+
+### Grid | Cell | Pixel
+
+![](index_files/img/3.png){.absolute top="150" left="120" width="850"}
+
+::: footer
+Source:[Raster Format](https://datacarpentry.org/organization-geospatial/01-intro-raster-data/)
+:::
+
+
+## The Raster Model
+
+### Definition Statements
+
+::: {.incremental}
+- Raster data is any pixelated (or gridded) data where each pixel is associated with a specific geographical location. 
+- The value of a pixel can be continuous (e.g. elevation) or categorical (e.g. land use). 
+-  A geospatial raster differs from a digital photo by *spatial information* that connects the data to a particular location. 
+- Raster *spatial information* includes extent and cell size, number of rows and columns, and a coordinate reference system (or CRS).
+:::
+
+::: footer
+Source:[Raster Format](https://datacarpentry.org/organization-geospatial/01-intro-raster-data/)
+:::
+
+## The Raster Model
+
+### Definition Statements
+
+::: {.incremental}
+- NOT Vector - Unique Structure
+- Cell + Grid Structure
+- Variable Spatial Resolution
+- Continuous & Discrete Values
+- Single or Multi-Band
+:::
+
+::: footer
+Source:[Raster Format](https://datacarpentry.org/organization-geospatial/01-intro-raster-data/)
+:::
+
+## The Raster Model
+
+### Vector vs. Raster Coverage 
+
+![](index_files/img/4.gif){.absolute top="150" left="200" width="700"}
+
+::: footer
+Source:[Raster Format](https://datacarpentry.org/organization-geospatial/01-intro-raster-data/)
+:::
+
+## The Raster Model
+
+### Vector vs. Raster Coverage 
+
+![](index_files/img/5.png){.absolute top="250" left="200" width="650"}
+
+::: footer
+Source:[Medium](https://spillingthetea.medium.com/geospatial-data-analysis-e8cd1376e47b)
+:::
+
+## The Raster Model
+
+### Vector vs. Raster Coverage 
+
+![](index_files/img/6.png){.absolute top="250" left="200" width="650"}
+
+::: footer
+Source:[Udemy](https://udemy-images.udemy.com/course/750x422/1124844_adab_3.jpg)
+:::
+
+## The Raster Model
+
+### 4 Advantage Summary:
+
+::: {.incremental}
+- A simple data structure - matrix of cells, continuous in nature, holding one value per cell.
+- Ideal format for advanced spatial and statistical analysis.
+- Excels at continuous surface representation.
+- Ability to perform fast overlay analysis.
+:::
+
+::: footer
+Source:[Raster Advantages](https://desktop.arcgis.com/en/arcmap/10.3/manage-data/raster-and-images/what-is-raster-data.htm)
+:::
+
+## The Raster Model
+
+### Cell | Grid Structure 
+
+![](index_files/img/7.png){.absolute top="250" left="200" width="650"}
+
+
+## The Raster Model
+
+### Cell | Grid Structure
+
+![](index_files/img/8.png){.absolute top="250" left="200" width="650"}
+
+
+## The Raster Model
+
+### Cell | Grid Structure
+
+::: {.incremental}
+- Relationship w/ geographic location (earth's surface)
+- Hold 1 value per cell
+- Each cell features same spatial resolution
+- *Color space* of pixels tied to cell values
+:::
+
+
+![](index_files/img/9.png){.absolute top="400" left="700" width="350"}
+
+::: footer
+Source:[NEON](https://www.neonscience.org/resources/learning-hub/tutorials/raster-data-r)
+:::
+
+## The Raster Model
+
+### Spatial Resolution (dimension #1)
+
+
+![](index_files/img/11.png){.absolute top="250" left="100" width="850"}
+
+::: footer
+Source:[NEON](https://www.neonscience.org/resources/learning-hub/tutorials/raster-data-r)
+:::
+
+## The Raster Model
+
+### Spatial Resolution (dimension #1)
+
+#### Pixels in a 1 Square KM (1 KM by 1 KM) Raster at *Increasing* Resolutions:
+
+| Resolution|Pixels|Pixel Count|
+|:-----------------|----:|----:|
+|100 Meter|100|1 Hundred|
+|10 Meter|10,000|10 Thousand|
+|1 Meter|1,000,000|1 Million|
+|10 Centimeter|100,000,000|100 Million|
+|1 Centimeter|10,000,000,000|10 Billion|
+
+::: footer
+Source:[Textbook](https://students.flatworldknowledge.com/catalog/editions/campbell_2_0-essentials-of-geographic-information-systems-2-0)
+:::
+
+## The Raster Model
+
+### Bit Depth (dimension #2)
+
+#### *The bit depth (pixel depth) of a cell determines the range of values that a particular raster file can store.*
+
+![](index_files/img/10.png){.absolute top="280" left="270" width="550"}
+
+::: footer
+Source:[ESRI Raster](https://desktop.arcgis.com/en/arcmap/10.3/manage-data/raster-and-images/bit-depth-capacity-for-raster-dataset-cells.htm)
+:::
+
+
+## The Raster Model
+
+### Bit Depth (dimension #2)
+
+#### *The bit depth (pixel depth) of a cell determines the range of values that a particular raster file can store.*
+
+![](index_files/img/12.png){.absolute top="330" left="230" width="600"}
+
+::: footer
+Source:[Fix The Photo](https://fixthephoto.com/8-bit-vs-16-bit.html)
+:::
+
+
+## The Raster Model
+
+### Continuous vs Discrete Values (dimension #3)
+
+![](index_files/img/13.png){.absolute top="250" left="190" width="700"}
+
+
+## The Raster Model
+
+### Continuous vs Discrete Values (dimension #3)
+
+![](index_files/img/14.png){.absolute top="250" left="290" width="500"}
+
+
+## The Raster Model
+
+### Continuous vs Discrete Values (dimension #3)
+
+![](index_files/img/15.png){.absolute top="200" left="230" width="600"}
+
+
+## The Raster Model
+
+### Continuous vs Discrete Values (dimension #3)
+
+![](index_files/img/16.png){.absolute top="250" left="180" width="700"}
+
+
+
+## The Raster Model
+
+### Continuous vs Discrete Values (dimension #3)
+
+![](index_files/img/17.png){.absolute top="250" left="200" width="700"}
+
+
+
+
+## The Raster Model
+
+### Single vs Multi-band Formats
+
+![](index_files/img/18.png){.absolute top="250" left="120" width="850"}
+
+
+
+## The Raster Model
+
+### Single vs Multi-band Formats
+
+![](index_files/img/20.png){.absolute top="200" left="230" width="600"}
+
+
+## The Raster Model
+
+### Single vs Multi-band Formats
+
+![](index_files/img/19.png){.absolute top="200" left="230" width="600"}
+
+
+## The Raster Model
+
+### Single vs Multi-band Formats
+
+![](index_files/img/21.png){.absolute top="250" left="200" width="700"}
+
+::: footer
+Source:[NEON](https://www.neonscience.org/resources/learning-hub/tutorials/raster-data-r)
+:::
+
+
+## The Raster Model
+
+### Single vs Multi-band Formats
+
+#### 3 Separated Bands for RGB Composite
+
+![](index_files/img/22.png){.absolute top="300" left="120" width="900"}
+
+::: footer
+Source:[Data Carpentry](https://datacarpentry.org/organization-geospatial/01-intro-raster-data/)
+:::
+
+
+## The Raster Model
+
+### Single vs Multi-band Formats
+
+#### 3 Band Color Composite Image
+
+![](index_files/img/23.png){.absolute top="240" left="250" width="600"}
+
+::: footer
+Source:[Data Carpentry](https://datacarpentry.org/organization-geospatial/01-intro-raster-data/)
+:::
+
+
+## The Raster Model
+
+### Single vs Multi-band Formats
+
+#### 3 Band Color Composite Image (metadata + band statistics)
+
+![](index_files/img/24.png){.absolute top="270" left="100" width="800"}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
